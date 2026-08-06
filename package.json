@@ -1,42 +1,56 @@
 {
-  "name": "tsdown-starter",
+  "name": "@timbic/stylelint-config",
   "type": "module",
-  "version": "0.0.0",
-  "description": "A starter for creating a TypeScript package.",
-  "author": "Author Name <author.name@mail.com>",
+  "version": "0.0.1",
+  "private": false,
+  "description": "Timbic's stylelint configuration",
+  "author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/author/library#readme",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
-  },
-  "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "git+https://github.com/Timbic/stylelint-config.git"
   },
   "exports": {
-    ".": "./dist/index.mjs",
-    "./package.json": "./package.json"
+    ".": "./dist/index.js"
   },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsdown",
-    "dev": "tsdown --watch",
-    "test": "vitest",
+    "fmt": "prettier --cache --write .",
+    "fmt:chk": "prettier --check .",
+    "lint": "eslint --cache",
+    "lint:fix": "eslint --cache --fix",
     "typecheck": "tsc --noEmit",
     "release": "bumpp",
-    "prepublishOnly": "pnpm run build"
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@timbic/eslint-config": "^1.0.1",
-    "@timbic/prettier-config": "^1.1.4",
-    "@types/node": "^26.1.1",
-    "bumpp": "^11.1.0",
-    "eslint": "^10.8.0",
-    "prettier": "^3.9.6",
-    "tsdown": "^0.22.5",
-    "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
-  }
+    "@timbic/eslint-config": "1.0.1",
+    "@timbic/prettier-config": "1.1.4",
+    "bumpp": "12.1.1",
+    "eslint": "10.8.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.3.0",
+    "prettier": "3.9.6",
+    "tsdown": "0.22.14",
+    "typescript": "6.0.3"
+  },
+  "lint-staged": {
+    "*/**/*.{js,ts,md,json}": [
+      "pnpm fmt",
+      "pnpm lint:fix"
+    ]
+  },
+  "packageManager": "pnpm@11.20.0"
 }
