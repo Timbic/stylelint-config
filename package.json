@@ -1,56 +1,56 @@
 {
-  "name": "@timbic/stylelint-config",
-  "type": "module",
-  "version": "0.0.1",
-  "private": false,
-  "description": "Timbic's stylelint configuration",
-  "author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
-  "license": "MIT",
-  "keywords": [
-    "stylelint",
-    "stylelint-config"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Timbic/stylelint-config.git"
-  },
-  "exports": {
-    ".": "./dist/index.js"
-  },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "scripts": {
-    "build": "tsdown",
-    "fmt": "prettier --cache --write .",
-    "fmt:chk": "prettier --check .",
-    "lint": "eslint --cache",
-    "lint:fix": "eslint --cache --fix",
-    "typecheck": "tsc --noEmit",
-    "release": "bumpp",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "@timbic/eslint-config": "1.0.1",
-    "@timbic/prettier-config": "1.1.4",
-    "bumpp": "12.1.1",
-    "eslint": "10.8.0",
-    "husky": "9.1.7",
-    "lint-staged": "17.3.0",
-    "prettier": "3.9.6",
-    "tsdown": "0.22.14",
-    "typescript": "6.0.3"
-  },
-  "lint-staged": {
-    "*/**/*.{js,ts,md,json}": [
-      "pnpm fmt",
-      "pnpm lint:fix"
-    ]
-  },
-  "packageManager": "pnpm@11.20.0"
+	"name": "@timbic/stylelint-config",
+	"type": "module",
+	"version": "0.0.1",
+	"private": false,
+	"description": "Timbic's stylelint configuration",
+	"author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
+	"license": "MIT",
+	"keywords": [
+		"stylelint",
+		"stylelint-config"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Timbic/stylelint-config.git"
+	},
+	"exports": {
+		".": "./dist/index.js"
+	},
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsdown",
+		"fmt": "prettier --cache --write .",
+		"fmt:chk": "prettier --check .",
+		"lint": "eslint --cache",
+		"lint:fix": "eslint --cache --fix",
+		"typecheck": "tsc --noEmit",
+		"release": "bumpp",
+		"prepare": "husky"
+	},
+	"devDependencies": {
+		"@timbic/eslint-config": "1.0.1",
+		"@timbic/prettier-config": "1.1.4",
+		"bumpp": "12.1.1",
+		"eslint": "10.8.0",
+		"husky": "9.1.7",
+		"lint-staged": "17.3.0",
+		"prettier": "3.9.6",
+		"tsdown": "0.22.14",
+		"typescript": "6.0.3"
+	},
+	"lint-staged": {
+		"*/**/*.{js,ts,md,json}": [
+			"pnpm fmt",
+			"pnpm lint:fix"
+		]
+	},
+	"packageManager": "pnpm@11.20.0"
 }
