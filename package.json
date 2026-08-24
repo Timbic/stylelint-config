@@ -35,6 +35,14 @@
 		"release": "bumpp",
 		"prepare": "husky"
 	},
+	"dependencies": {
+		"postcss-html": "2.0.0",
+		"stylelint-no-unsupported-browser-features": "8.1.1",
+		"stylelint-order": "8.1.1"
+	},
+	"peerDependencies": {
+		"stylelint": "^17.0.0"
+	},
 	"devDependencies": {
 		"@timbic/eslint-config": "1.1.0",
 		"@timbic/prettier-config": "1.1.4",
@@ -43,6 +51,7 @@
 		"husky": "9.1.7",
 		"lint-staged": "17.3.0",
 		"prettier": "3.9.6",
+		"stylelint": "17.14.1",
 		"tsdown": "0.22.14",
 		"typescript": "6.0.3"
 	},
