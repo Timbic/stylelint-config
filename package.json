@@ -26,6 +26,7 @@
 		"access": "public"
 	},
 	"scripts": {
+		"dev": "pnpm dlx stylelint-config-inspector --config stylelint.config.ts",
 		"build": "tsdown",
 		"fmt": "prettier --cache --write .",
 		"fmt:chk": "prettier --check .",
