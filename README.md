@@ -1,8 +1,9 @@
 # @timbic/stylelint-config
 
-Extensible stylelint configuration for the smart developers.
+Extensible stylelint configuration for smart developers.
 
-### Note: some rules might change in the future!!!
+> **Important Note:** Some rules might change in future. If you want to use this package right now - pin its version so new updates doesn't
+> affect you
 
 ## Usage
 
@@ -25,10 +26,10 @@ export default withTimbic({
 
 Your config will override the defaults and extend the configuration.
 
-## But what about extends field!?
+## But what about the extends field?
 
-You cannot use this config inside extends array!!! I refuse to follow this "extends" architecture of stylelint because I hate it. But you
-CAN safely use extends in your options:
+You cannot use this config inside the extends array. This package refuses to follow stylelint's "extends" architecture. But you CAN safely
+use extends in your options:
 
 ```ts
 import withTimbic from "@timbic/stylelint-config";
@@ -44,7 +45,7 @@ This config provides a comprehensive Stylelint setup with the following:
 
 - A thorough set of validation rules enforcing common coding conventions
 - Property ordering via `stylelint-order` with recess order
-- Browser compatibility checks via `stylelint-no-unsupported-browser-features` targeting `> 1%`, `Last 2 versions`, `not dead`
+- Browser compatibility checks via `stylelint-no-unsupported-browser-features` targeting `> 1%`, `last 2 versions`, `not dead`
 - Vue support out of the box which will not affect you if you don't use Vue in your project
 
 ## Inspect the config
@@ -55,7 +56,7 @@ You can use this command to inspect all the rules and overrides inside your reso
 pnpm dlx stylelint-config-inspector
 ```
 
-## Shout out to:
+## Shout out to
 
 - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) by stylelint
 - [stylelint-config-standard-vue](https://github.com/ota-meshi/stylelint-config-standard-vue) by ota-meshi
