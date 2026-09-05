@@ -45,14 +45,14 @@
 		"stylelint": "^17.0.0"
 	},
 	"devDependencies": {
-		"@timbic/eslint-config": "1.2.0",
-		"@timbic/prettier-config": "1.2.0",
+		"@timbic/eslint-config": "1.2.1",
+		"@timbic/prettier-config": "1.2.1",
 		"bumpp": "12.3.0",
-		"eslint": "10.9.1",
+		"eslint": "10.10.0",
 		"husky": "9.1.7",
 		"lint-staged": "17.4.1",
 		"prettier": "3.9.6",
-		"stylelint": "17.14.1",
+		"stylelint": "17.15.0",
 		"tsdown": "0.23.0",
 		"typescript": "6.0.3"
 	},
