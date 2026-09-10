@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"postcss-html": "2.0.0",
-		"stylelint-no-unsupported-browser-features": "8.1.1",
+		"stylelint-no-unsupported-browser-features": "8.1.2",
 		"stylelint-order": "8.1.1"
 	},
 	"peerDependencies": {
