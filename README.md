@@ -1,5 +1,10 @@
 # @timbic/stylelint-config
 
+<p>
+  <a href="https://www.npmjs.com/package/@timbic/stylelint-config"><img src="https://img.shields.io/npm/v/@timbic/stylelint-config.svg?logo=nodedotjs" alt="npm package"></a>
+  <a href="https://github.com/Timbic/stylelint-config"><img src="https://img.shields.io/badge/Github-gray.svg?logo=github" alt="github repo"></a>
+</p>
+
 Extensible stylelint configuration for smart developers.
 
 > **Important Note:** Some rules might change in future. If you want to use this package right now - pin its version so new updates doesn't
