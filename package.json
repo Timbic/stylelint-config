@@ -42,7 +42,7 @@
 		"stylelint-order": "8.1.2"
 	},
 	"peerDependencies": {
-		"stylelint": "^17.0.0"
+		"stylelint": "^17.0.0 || ^18.0.0"
 	},
 	"devDependencies": {
 		"@timbic/eslint-config": "1.2.3",
@@ -52,7 +52,7 @@
 		"husky": "9.1.7",
 		"lint-staged": "17.6.0",
 		"prettier": "3.10.1",
-		"stylelint": "17.16.0",
+		"stylelint": "18.0.0",
 		"tsdown": "0.23.7",
 		"typescript": "6.0.3"
 	},
