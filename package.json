@@ -1,7 +1,7 @@
 {
 	"name": "@timbic/stylelint-config",
 	"type": "module",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"private": false,
 	"description": "Timbic's stylelint configuration",
 	"author": "Timur Bikmuhametov <tim.bic22@gmail.com>",
