@@ -180,13 +180,16 @@ importers:
   .:
     dependencies:
       postcss-html:
-        specifier: 2.0.0
+        specifier: ^2.0.0
         version: 2.0.0(postcss@8.5.28)
+      stylelint:
+        specifier: ^17.16.0
+        version: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
       stylelint-no-unsupported-browser-features:
-        specifier: 8.1.2
+        specifier: ^8.1.2
         version: 8.1.2(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
       stylelint-order:
-        specifier: 8.1.2
+        specifier: ^8.1.2
         version: 8.1.2(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
     devDependencies:
       '@timbic/eslint-config':
@@ -204,9 +207,6 @@ importers:
       lint-staged:
         specifier: 17.6.1
         version: 17.6.1
-      stylelint:
-        specifier: 17.16.0
-        version: 17.16.0(supports-color@10.2.2)(typescript@6.0.3)
       tsdown:
         specifier: 0.23.7
         version: 0.23.7(typescript@6.0.3)
