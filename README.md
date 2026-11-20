@@ -3,9 +3,10 @@
 <p>
   <a href="https://www.npmjs.com/package/@timbic/stylelint-config"><img src="https://img.shields.io/npm/v/@timbic/stylelint-config.svg?logo=nodedotjs" alt="npm package"></a>
   <a href="https://github.com/Timbic/stylelint-config"><img src="https://img.shields.io/badge/Github-gray.svg?logo=github" alt="github repo"></a>
+   <a href="https://npmx.dev/package/@timbic/stylelint-config"><img src="https://img.shields.io/badge/npmx.dev-black?logo=npm" alt="view on npmx"></a>
 </p>
 
-Extensible stylelint configuration for smart developers.
+Extensible Stylelint configuration for smart developers.
 
 > **Important Note:** Some rules might change in future. If you want to use this package right now - pin its version so new updates doesn't
 > affect you
@@ -13,8 +14,21 @@ Extensible stylelint configuration for smart developers.
 ## Usage
 
 ```bash
-pnpm add -D stylelint @timbic/stylelint-config
+pnpm add -D @timbic/stylelint-config
 ```
+
+> **Important:** When using pnpm, don't forget to hoist Stylelint to the top level in `pnpm-workspace.yaml`:
+>
+> ```yaml
+> publicHoistPattern:
+>     - stylelint
+> ```
+>
+> Alternatively, install Stylelint as a dev dependency:
+>
+> ```bash
+> pnpm add -D stylelint
+> ```
 
 ```ts
 // stylelint.config.{js,mjs,ts,mts}
@@ -33,8 +47,8 @@ Your config will override the defaults and extend the configuration.
 
 ## But what about the extends field?
 
-You cannot use this config inside the extends array. This package refuses to follow stylelint's "extends" architecture. But you CAN safely
-use extends in your options:
+You **CANNOT** use this config inside the extends array. This package refuses to follow stylelint's "extends" architecture. But you CAN
+safely use extends in your options:
 
 ```ts
 import withTimbic from "@timbic/stylelint-config";
@@ -66,3 +80,7 @@ pnpm dlx stylelint-config-inspector
 - [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) by stylelint
 - [stylelint-config-standard-vue](https://github.com/ota-meshi/stylelint-config-standard-vue) by ota-meshi
 - [stylelint-config-recess-order](https://github.com/stormwarning/stylelint-config-recess-order) by stormwarning
+
+## License
+
+Released under the [MIT License](./LICENSE).
