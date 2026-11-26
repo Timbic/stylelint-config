@@ -4,7 +4,6 @@
 		"dbaeumer.vscode-eslint",
 		"github.vscode-github-actions",
 		"antfu.goto-alias",
-		"pkief.material-icon-theme",
-		"stylelint.vscode-stylelint"
+		"pkief.material-icon-theme"
 	]
 }
