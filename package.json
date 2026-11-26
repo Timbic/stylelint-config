@@ -38,7 +38,7 @@
 	},
 	"dependencies": {
 		"postcss-html": "^2.0.1",
-		"stylelint": "^17.16.0",
+		"stylelint": "^18.1.0",
 		"stylelint-no-unsupported-browser-features": "^8.1.2",
 		"stylelint-order": "^8.1.3"
 	},
